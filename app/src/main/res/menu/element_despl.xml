@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Espaciador -->
+    <item
+        android:id="@+id/nav_spacer"
+        android:title=""
+        android:enabled="false"
+        app:actionLayout="@layout/menu_spacer" />
+
+
+    <!-- Espaciador -->
+    <item
+        android:id="@+id/nav_spacer"
+        android:title=""
+        android:enabled="false"
+        app:actionLayout="@layout/menu_spacer" />
+
+    <!-- Espaciador -->
+    <item
+        android:id="@+id/nav_spacer"
+        android:title=""
+        android:enabled="false"
+        app:actionLayout="@layout/menu_spacer" />
+
+    <!-- Espaciador -->
+    <item
+        android:id="@+id/nav_spacer"
+        android:title=""
+        android:enabled="false"
+        app:actionLayout="@layout/menu_spacer" />
+    <!-- Espaciador -->
+    <item
+        android:id="@+id/nav_spacer"
+        android:title=""
+        android:enabled="false"
+        app:actionLayout="@layout/menu_spacer" />
+    <!-- Espaciador -->
+
+
+    <!-- Solo para Admin -->
+    <item
+        android:id="@+id/add_comunidad"
+        android:icon="@drawable/ic_comunity"
+        android:title="Agregar Comunidad"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/list_comunidad"
+        android:icon="@drawable/ic_listcomunidad"
+        android:title="Listado de comunidades"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/join_comunidad"
+        android:icon="@drawable/ic_comunity"
+        android:title="Unirse a Comunidad"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_closesesion"
+        android:title="Cerrar Sesión" />
+
+</menu>

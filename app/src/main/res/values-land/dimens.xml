@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- En horizontal, sube el bloque: inicia más arriba y termina antes -->
+    <dimen name="guideline_top_percent">0.05</dimen>
+    <dimen name="guideline_bottom_percent">0.85</dimen>
+    <!-- Imagen a la izquierda -->
+    <dimen name="image_horizontal_bias">0.0</dimen>
+    <dimen name="fab_margin">48dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="botones">#1E3A8A</color>
+    <color name="enlaces">#60A5FA</color>
+    <color name="fondoPantalla">#E0E7FF</color>
+    <color name="textoPrincipal">#374151</color>
+    <color name="nav_text_color">#333333</color>
+    <color name="nav_icon_color">#333333</color>
+    <color name="primaryDark">#1E2979</color>
+    <color name="purple_500">#6200EE</color>
+</resources>

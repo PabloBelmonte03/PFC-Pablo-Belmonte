@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pfcpablobelmontebotella">
+
+    <!-- Permisos -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Para Android 12 (API 32) y anteriores -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <!-- Para Android 13 (API 33) y superiores -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PFCPabloBelmonteBotella">
+
+        <!-- Lanzador -->
+        <activity
+            android:name="com.example.pfcpablobelmontebotella.ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Otras pantallas… -->
+        <activity
+            android:name="com.example.pfcpablobelmontebotella.ui.LoginUserMain"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.pfcpablobelmontebotella.ui.PantallaRegistro"
+            android:exported="true" />
+        <activity
+            android:name="com.example.pfcpablobelmontebotella.ui.RecuperarPassword"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.pfcpablobelmontebotella.ui.ListadoComunidades"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.pfcpablobelmontebotella.ui.IncidenciasActivity"
+            android:exported="true"
+            android:label="Incidencias" />
+
+        <activity
+            android:name="com.example.pfcpablobelmontebotella.ui.Instalaciones"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.pfcpablobelmontebotella.ui.CalendarioActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".firebase.PerfilUsuario"
+            android:label="Perfil" />
+
+    </application>
+</manifest>

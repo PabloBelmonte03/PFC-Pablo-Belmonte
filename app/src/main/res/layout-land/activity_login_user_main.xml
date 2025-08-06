@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginUserMain">
+
+    <!-- Fondo de pantalla -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_fondo_principal"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- DrawerLayout sin scrim en XML -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/activity_login_user_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Contenido principal -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+            <!-- Guideline superior -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.04" />
+
+            <!-- Guideline inferior -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.92" />
+
+            <!-- Barra superior -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/top_bar"
+                android:layout_width="724dp"
+                android:layout_height="104dp"
+                android:layout_marginTop="32dp"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="109dp"
+                    android:layout_height="109dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/logo_desc"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btnDes"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_styles"
+                    android:contentDescription="@string/menu"
+                    android:src="@drawable/ic_men"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/mensaje_bienvenida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_styles"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:text="Hola, usuario"
+                    android:textColor="#1E2979"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btnDes"
+                    app:layout_constraintStart_toEndOf="@id/logo"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Contenedor comunidad (vacío) -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cont_comunidad"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <!-- Iconos principales -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cont_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/top_bar"
+                app:layout_constraintVertical_bias="0.457">
+
+                <!-- Fila 1 -->
+
+                <ImageButton
+                    android:id="@+id/btn_Incidencias"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="196dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/btn_styles"
+                    android:src="@drawable/ic_exclamation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_Home"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@drawable/btn_styles"
+                    android:src="@drawable/ic_instalaciones"
+                    app:layout_constraintStart_toEndOf="@id/btn_Incidencias"
+                    app:layout_constraintTop_toTopOf="@id/btn_Incidencias" />
+
+                <ImageButton
+                    android:id="@+id/btn_user"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@drawable/btn_styles"
+                    android:src="@drawable/ic_perfil"
+                    app:layout_constraintStart_toEndOf="@id/btn_Home"
+                    app:layout_constraintTop_toTopOf="@id/btn_Home" />
+
+                <!-- Fila 2 -->
+
+                <ImageButton
+                    android:id="@+id/btn_Calendario"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="196dp"
+                    android:background="@drawable/btn_styles"
+                    android:src="@drawable/ic_calendario"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_Incidencias" />
+
+                <ImageButton
+                    android:id="@+id/btn_Chat"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@drawable/btn_desactivado"
+                    android:src="@drawable/ic_chat"
+                    app:layout_constraintStart_toEndOf="@id/btn_Calendario"
+                    app:layout_constraintTop_toBottomOf="@id/btn_Home" />
+
+                <ImageButton
+                    android:id="@+id/btn_Gastos"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@drawable/btn_desactivado"
+                    android:src="@drawable/ic_gastos"
+                    app:layout_constraintStart_toEndOf="@id/btn_Chat"
+                    app:layout_constraintTop_toBottomOf="@id/btn_user" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Menú lateral a la derecha -->
+        <!-- Menú lateral -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            app:menu="@menu/element_despl" />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>
