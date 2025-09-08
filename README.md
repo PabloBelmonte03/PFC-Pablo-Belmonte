@@ -79,6 +79,6 @@ El proyecto cumple con los objetivos propuestos y mejora la eficiencia en la ges
 - [Firebase Docs](https://firebase.google.com/docs)  
 - [Android Developers](https://developer.android.com/docs)  
 - [Google Fonts Icons](https://fonts.google.com/icons)  
-- [CommuniApp]([https://www.communiapp.com](https://www.hugedomains.com/domain_profile.cfm?d=communityapp.com))  
-- [VecinosApp]([https://www.vecinosapp.com](https://www.vecinos.com/es))  
+- [CommuniApp](https://www.communiapp.com(https://www.hugedomains.com/domain_profile.cfm?d=communityapp.com))  
+- [VecinosApp][https://www.vecinosapp.com(https://www.vecinos.com/es))  
 - Canal YouTube: [@mouredev](https://www.youtube.com/@mouredev)
