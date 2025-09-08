@@ -59,7 +59,7 @@ Se estudiaron soluciones existentes como *CommunityApp* y *VecinosApp*, además 
 
 ## ✅ Conclusiones
 
-El proyecto cumple con los objetivos propuestos y mejora la eficiencia en la gestión comunitaria. Además, ha permitido al autor adquirir experiencia en desarrollo móvil y diseño de interfaces.
+El proyecto cumple con los objetivos propuestos y mejora la eficiencia en la gestión comunitaria. Además, me ha permitido adquirir experiencia en desarrollo móvil y diseño de interfaces.
 
 ---
 
